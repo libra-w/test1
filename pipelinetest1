@@ -1,0 +1,20 @@
+pipeline{
+    agent any      //------------代理任何一个节点机器
+    stages{          
+       stage（'build'）{
+         steps{
+             println("Build")
+          }
+        }
+       stage（'test'）{
+         steps{
+             println("Test")
+          }
+        }
+       stage（'deploy'）{
+         steps{
+             println("Deploy")
+          }
+        }
+    }  
+ }
